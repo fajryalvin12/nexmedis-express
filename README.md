@@ -7,8 +7,8 @@
 - URL Structure : http://localhost:3000/signup (registration)
   http://localhost:3000/login (authentication)
 - Response format :
-  // Registration
   ```javascript
+  // Registration
   {
     status : 200,
     message : "Success created the account",
