@@ -145,18 +145,19 @@
 
 ## f. Completing a purchase
 
-- Endpoint : "/transaction"
+- Endpoint : "/transaction/:id"
 - HTTP Method : POST
-- URL Structure : http://localhost:3000/transaction/
+- URL Structure : http://localhost:3000/transaction/:id
 - Request Body :
 
 ```javascript
     {
-        id : 3,
+        productId : 3,
         name : "Product C",
         price : 75000,
         qty : 1,
         paymentMethod : "Bank Transfer"
+        userId: 1,
     },
 ```
 
@@ -168,11 +169,13 @@
     message : "Success buy the product",
     data :
     {
-        id : 3,
+        transactionId : 1,
+        productId : 3,
         name : "Product C",
         price : 75000,
         qty : 12,
-        paymentMethod : "Bank Transfer"
+        paymentMethod : "Bank Transfer",
+        userId : 1
     },
   }
 ```
