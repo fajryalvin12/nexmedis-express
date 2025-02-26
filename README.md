@@ -5,15 +5,27 @@
 - Endpoint : "/signup"
 - HTTP Method : POST
 - URL Structure : http://localhost:3000/signup
+- Request Body :
+
+```javascript
+{
+    fullname : "User_1",
+    email : "user@gmail.com",
+    password : "12345678",
+    confirmPassword : "12345678"
+}
+```
+
 - Response format :
   ```javascript
   {
     status : 200,
     message : "Success created the account",
-    data : {
+    data :
+    {
       email : "user@gmail.com",
       username : "User"
-  }
+    }
   }
   ```
 
@@ -22,6 +34,15 @@
 - Endpoint : "/login"
 - HTTP Method : POST
 - URL Structure : http://localhost:3000/login
+- Request Body :
+
+```javascript
+{
+    email : "user@gmail.com",
+    password : "12345678",
+}
+```
+
 - Response format :
   ```javascript
   {
@@ -94,6 +115,17 @@
 - Endpoint : "/cart"
 - HTTP Method : POST
 - URL Structure : http://localhost:3000/cart
+- Request Body :
+
+```javascript
+{
+    id: 3,
+    name : "Product C",
+    price : 75000,
+    qty : 1
+}
+```
+
 - Response format :
 
 ```javascript
@@ -105,7 +137,7 @@
         id : 3,
         name : "Product C",
         price : 75000,
-        qty : 12
+        qty : 1
     },
   }
   // User did not authenticate the account
@@ -120,6 +152,18 @@
 - Endpoint : "/transaction"
 - HTTP Method : POST
 - URL Structure : http://localhost:3000/transaction/
+- Request Body :
+
+```javascript
+    {
+        id : 3,
+        name : "Product C",
+        price : 75000,
+        qty : 1,
+        paymentMethod : "Bank Transfer"
+    },
+```
+
 - Response format :
 
 ```javascript
@@ -131,7 +175,8 @@
         id : 3,
         name : "Product C",
         price : 75000,
-        qty : 12
+        qty : 12,
+        paymentMethod : "Bank Transfer"
     },
   }
 ```
