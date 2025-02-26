@@ -1,23 +1,12 @@
 # 1. Create RESTful endpoints, HTTP Methods, URL Structure, Response Format
 
-## a. User Registration and authentication
+## a. User Registration
 
-- Endpoint : "/signup" (registration), "/login"(authentication)
+- Endpoint : "/signup"
 - HTTP Method : POST
-- URL Structure : http://localhost:3000/signup (registration)
-  http://localhost:3000/login (authentication)
+- URL Structure : http://localhost:3000/signup
 - Response format :
   ```javascript
-  // Registration
-  {
-    status : 200,
-    message : "Success created the account",
-    data : {
-      email : "user@gmail.com",
-      username : "User"
-  }
-  }
-  // Authentication
   {
     status : 200,
     message : "Success created the account",
@@ -28,12 +17,28 @@
   }
   ```
 
-## b. Viewing and Searching Products
+## b. User authentication
 
-- Endpoint : "/products" (viewing products), "/search=productName" (searching products)
+- Endpoint : "/login"
+- HTTP Method : POST
+- URL Structure : http://localhost:3000/login
+- Response format :
+  ```javascript
+  {
+    status : 200,
+    message : "Login Success",
+    data : {
+      email : "user@gmail.com",
+      username : "User"
+  }
+  }
+  ```
+
+## c. Viewing Products
+
+- Endpoint : "/products"
 - HTTP Method : GET
-- URL Structure : http://localhost:3000/products (viewing products)
-  http://localhost:3000/search=productName (searching products)
+- URL Structure : http://localhost:3000/products
 - Response format :
   ```javascript
   // Viewing Products
@@ -61,6 +66,15 @@
         },
     ]
   }
+  ```
+
+## d. Searching Products
+
+- Endpoint : "/search=productName"
+- HTTP Method : GET
+- URL Structure : http://localhost:3000/search=productName
+- Response format :
+  ```javascript
   // Searching Products
   {
     status : 200,
@@ -75,7 +89,7 @@
     }
   ```
 
-## c. Adding Items to a shopping cart
+## e. Adding Items to a shopping cart
 
 - Endpoint : "/cart"
 - HTTP Method : POST
@@ -101,7 +115,7 @@
   }
 ```
 
-## d. Completing a purchase
+## f. Completing a purchase
 
 - Endpoint : "/transaction"
 - HTTP Method : POST
