@@ -10,20 +10,20 @@
   // Registration
   ```javascript
   {
-  status : 200,
-  message : "Success created the account",
-  data : {
-    email : "user@gmail.com",
-    username : "User"
+    status : 200,
+    message : "Success created the account",
+    data : {
+      email : "user@gmail.com",
+      username : "User"
   }
   }
   // Authentication
   {
-  status : 200,
-  message : "Success created the account",
-  data : {
-    email : "user@gmail.com",
-    username : "User"
+    status : 200,
+    message : "Success created the account",
+    data : {
+      email : "user@gmail.com",
+      username : "User"
   }
   }
   ```
@@ -38,41 +38,41 @@
   ```javascript
   // Viewing Products
   {
-  status : 200,
-  message : "List Products",
-  data : [
-  {
-    id : 1,
-    name : "Product A",
-    price : 90000,
-    qty : 45
-  },
-  {
-    id : 2,
-    name : "Product B",
-    price : 80000,
-    qty : 23
-  },
-  {
-    id : 3,
-    name : "Product C",
-    price : 75000,
-    qty : 12
-  },
-  ]
+    status : 200,
+    message : "List Products",
+    data : [
+        {
+            id : 1,
+            name : "Product A",
+            price : 90000,
+            qty : 45
+        },
+        {
+            id : 2,
+            name : "Product B",
+            price : 80000,
+            qty : 23
+        },
+        {
+            id : 3,
+            name : "Product C",
+            price : 75000,
+            qty : 12
+        },
+    ]
   }
   // Searching Products
   {
-  status : 200,
-  message : "Success find the products",
-  data :
-  {
-    id : 3,
-    name : "Product C",
-    price : 75000,
-    qty : 12
-  },
-  }
+    status : 200,
+    message : "Success find the products",
+    data :
+    {
+        id : 3,
+        name : "Product C",
+        price : 75000,
+        qty : 12
+    },
+    }
   ```
 
 ## c. Adding Items to a shopping cart
@@ -84,15 +84,15 @@
 
 ```javascript
   {
-  status : 200,
-  message : "Add the product to the cart",
-  data :
-  {
-    id : 3,
-    name : "Product C",
-    price : 75000,
-    qty : 12
-  },
+    status : 200,
+    message : "Add the product to the cart",
+    data :
+    {
+        id : 3,
+        name : "Product C",
+        price : 75000,
+        qty : 12
+    },
   }
   // User did not authenticate the account
   {
@@ -110,14 +110,14 @@
 
 ```javascript
   {
-  status : 200,
-  message : "Success buy the product",
-  data :
-  {
-    id : 3,
-    name : "Product C",
-    price : 75000,
-    qty : 12
-  },
+    status : 200,
+    message : "Success buy the product",
+    data :
+    {
+        id : 3,
+        name : "Product C",
+        price : 75000,
+        qty : 12
+    },
   }
 ```
