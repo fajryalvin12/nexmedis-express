@@ -47,11 +47,7 @@
   ```javascript
   {
     status : 200,
-    message : "Login Success",
-    data : {
-      email : "user@gmail.com",
-      username : "User"
-  }
+    message : "Login Success"
   }
   ```
 
