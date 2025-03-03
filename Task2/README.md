@@ -10,7 +10,7 @@ select * from users u
 -- consider to the single table which have to fetch quickly, using the individual indexing for effective result. Due to the username column needs, the indexing take the "username" column for table users.
 create index users_username_idx on users("username")
 
--- fetch the username
+-- fetch the users from indexing
 select users u from users_username_idx where username=$1
 ```
 
