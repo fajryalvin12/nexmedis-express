@@ -179,29 +179,3 @@
     },
   }
 ```
-
-# 2. Design indexing strategy for optimizing Data
-
-## a. fetch a user by username
-
-```sql
-SELECT * FROM USERS
-
-CREATE INDEX USER_IDX ON USERS("username")
-```
-
-## b. fetch users who signed up after a certain date
-
-```sql
-SELECT * FROM USERS
-
-CREATE INDEX USER_IDX ON USERS("created_at")
-```
-
-## c. fetch a user by email
-
-```sql
-SELECT * FROM USERS
-
-CREATE INDEX USER_IDX ON USERS("email")
-```
